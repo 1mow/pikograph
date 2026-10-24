@@ -1,0 +1,27 @@
+Pikograph — графы связей для OSINT
+
+ЗАПУСК
+1. Распакуйте архив (не открывайте файлы прямо из архива).
+2. Откройте index.html в браузере. Сервер не нужен.
+   pikograph-single.html — то же самое одним файлом (удобно отправить на телефон).
+
+ФАЙЛЫ
+index.html, style.css, app.js — сайт
+favicon.svg, favicon-32.png, apple-touch-icon.png — иконка вкладки
+
+ПОИСК
+Кнопка «Искать» в карточке создаёт рядом блок «Результаты поиска» и показывает находки прямо в графе.
+Используются только открытые API без ключей и регистрации, они опрашиваются параллельно:
+  ФИО — Wikipedia RU/EN, Wikidata, OpenAlex, Bluesky, Stack Overflow, Internet Archive
+  Никнейм — GitHub, GitLab, Reddit, Hacker News, Mastodon, DEV, Keybase, Bluesky
+  E-mail — Gravatar, GitHub (публичный e-mail), MX через DNS-over-HTTPS, Hacker News, Reddit
+  Домен / IP — RDAP, DNS (dns.google), CT-логи (CertSpotter), Wayback Machine, ipwho.is
+  Организация — Wikipedia, Wikidata, GLEIF (LEI)
+  Адрес — OpenStreetMap Nominatim, Wikipedia
+  Фото — Wikimedia Commons (+ ссылки на обратный поиск по URL)
+  Телефон — локальный разбор страны и кода региона + упоминания на Hacker News и Reddit
+Если один источник не ответил — остальные всё равно показываются. В конце списка всегда есть
+ссылки для ручного поиска (Google, DuckDuckGo, Bing, Yandex и профильные сервисы).
+Запрос уходит на перечисленные сервисы. Свой SearXNG (настройки) можно добавить как ещё один источник.
+
+Данные проектов хранятся только в браузере. Экспорт/импорт — через JSON.
