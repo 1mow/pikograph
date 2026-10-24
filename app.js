@@ -17,6 +17,10 @@ const T={person:['ФИО','name'],phone:['Телефон','phone'],acc:['Акк�
 const M={name:['ФИО'],user:['Никнейм'],phone:['Телефон'],email:['E-mail'],net:['Домен / IP'],work:['Организация'],geo:['Адрес / место'],photo:['Фото'],gen:['Общий поиск']};
 const FONTS=['Inter','Space Grotesk','Manrope','Syne','Unbounded','Oswald','Playfair Display','Cormorant Garamond','JetBrains Mono','IBM Plex Mono','Georgia','system-ui'];
 const D={f:'Inter',fs:14,bl:26,ga:.06,br:.14,r:18,nw:200,ew:1.5,ec:'c',ar:1,gr:'dots',gs:28,th:'d',gn:.07,an:1,pt:0,inst:''};
+/* авто-подстройка под устройство: по возможностям экрана и ввода, без юзерагента и фингерпринта */
+const dev=()=>{const w=Math.min(innerWidth,screen.width||innerWidth),t=matchMedia('(pointer:coarse)').matches;return{k:t&&w<700?'phone':t&&w<1100?'tablet':'desk',t}};
+const LOW=(navigator.deviceMemory||4)<=2||(navigator.hardwareConcurrency||4)<=2;
+Object.assign(D,{phone:{fs:15,nw:176,bl:18,r:16},tablet:{nw:200,bl:22},desk:{}}[dev().k],{th:matchMedia('(prefers-color-scheme: light)').matches?'l':'d'},LOW?{bl:8,an:0,gn:0}:{});
 let s=null,st={...D,...ld0('pk:s',{})},U=[],R=[],sel=null,els={},rc={},drag=null,pinch=null,last='';const P=new Map;
 const snap=()=>JSON.stringify({n:s.n,e:s.e}),nm=id=>s.n.find(n=>n.id==id),idx=()=>ld0('pk:i',[]),setI=i=>sv('pk:i',i);
 
@@ -53,7 +57,7 @@ function ld(x){x=JSON.parse(x);s.n=x.n;s.e=x.e;last=snap();sel=null;nodes();pane
 const undo=()=>{if(s&&U.length){R.push(snap());ld(U.pop())}},redo=()=>{if(s&&R.length){U.push(snap());ld(R.pop())}};
 
 /* ---------- отрисовка ---------- */
-function apply(){const r=document.documentElement,v=r.style;r.className=st.th=='l'?'l':'';document.body.classList.toggle('na',!st.an);
+function apply(){const r=document.documentElement,v=r.style;{const d=dev();r.className=(st.th=='l'?'l ':'')+'dv-'+d.k+(d.t?' touch':'')}document.body.classList.toggle('na',!st.an);
 v.setProperty('--f',`'${st.f}',system-ui,sans-serif`);v.setProperty('--fs',st.fs+'px');v.setProperty('--bl',st.bl+'px');v.setProperty('--ga',st.ga);v.setProperty('--bd',st.br);v.setProperty('--r',st.r+'px');v.setProperty('--nw',st.nw+'px');v.setProperty('--ew',st.ew+'px');v.setProperty('--gn',st.gn);
 document.querySelector('meta[name=theme-color]').content=st.th=='l'?'#e9e9e9':'#060606';if(s){view();edges()}}
 function view(){if(!s)return;const v=s.v,g=$('#stage').style,gs=Math.max(4,st.gs*v.k);$('#world').style.transform=`translate(${v.x}px,${v.y}px) scale(${v.k})`;$('#zl').textContent=Math.round(v.k*100)+'%';
@@ -292,4 +296,5 @@ else if(a=='clr'){if(!s.n.length)return;s.n=[];s.e=[];commit();sel=null;nodes();
 else if(a=='set')$('#set').classList.toggle('o')};
 $('#dk').innerHTML=Object.entries(T).filter(([k])=>k!='result').map(([k,v])=>`<button data-t="${k}">${I(IC[k])}${v[0]}</button>`).join('');
 $('#dk').onclick=e=>{const b=e.target.closest('button');if(b&&s){if(innerWidth<700)$('#set').classList.remove('o');add(b.dataset.t)}};
+addEventListener('resize',()=>{clearTimeout(apply.t);apply.t=setTimeout(apply,150)});
 settings();apply();route();

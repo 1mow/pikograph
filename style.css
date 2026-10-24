@@ -1,8 +1,8 @@
 :root{--c:255,255,255;--bg:#060606;--fg:#f5f5f5;--ga:.06;--gm:1;--hl:.18;--sh:.55;--bl:26px;--r:18px;--f:'Inter',system-ui,sans-serif;--fs:14px;--nw:200px;--ew:1.5px;--bd:.14;--gn:.07}
 .l{--c:0,0,0;--bg:#e9e9e9;--fg:#080808;--gm:8;--hl:.85;--sh:.2}
 *{box-sizing:border-box;margin:0}
-html{height:100%;background:var(--bg)}
-body{height:100%;overflow:hidden;background:transparent;color:var(--fg);font:var(--fs)/1.45 var(--f);-webkit-tap-highlight-color:transparent;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
+html{height:100%;background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{height:100%;height:100dvh;overflow:hidden;background:transparent;color:var(--fg);font:var(--fs)/1.45 var(--f);-webkit-tap-highlight-color:transparent;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
 [hidden]{display:none!important}
 #amb{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
 #amb i{position:absolute;border-radius:50%;filter:blur(70px);background:radial-gradient(circle,rgba(var(--c),.17),transparent 65%)}
@@ -74,7 +74,7 @@ textarea{resize:vertical}
 .menu.o{display:block;animation:sl .22s ease}
 .menu button{display:block;width:100%;text-align:left;background:transparent;border-color:transparent}
 .menu hr{border:0;border-top:1px solid rgba(var(--c),.12);margin:4px 8px}
-.sheet{z-index:60;position:fixed;top:84px;right:12px;width:340px;max-height:calc(100% - 170px);overflow:auto;padding:18px;display:none;border:1px solid rgba(var(--c),var(--bd))}
+.sheet{z-index:60;position:fixed;top:84px;right:12px;width:min(340px,calc(100vw - 24px));max-height:calc(100% - 170px);overflow:auto;padding:18px;display:none;border:1px solid rgba(var(--c),var(--bd))}
 .sheet::after{display:none}.sheet.o{display:block;animation:sl .3s ease}
 #set{right:auto;left:12px}
 .sheet h3{font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.74em}
@@ -114,7 +114,7 @@ body:not(.hm) #home{display:none}
 .pa button{min-width:34px;height:34px;min-height:34px;padding:0 8px;display:grid;place-items:center;font-size:.8em}.pa svg{width:15px;height:15px}
 .empty{opacity:.5;grid-column:1/-1}
 @media(hover:none){.pa{opacity:1}}
-@media(max-width:700px){.sheet,#set{top:auto;left:8px;right:8px;width:auto;bottom:calc(92px + env(safe-area-inset-bottom));max-height:52vh}#nm{width:120px}.menu{right:8px}}
+
 
 .node.res{width:360px;padding:14px 14px 12px}
 .rt{flex:1;min-width:0}.rt small{display:block}.rt em{display:block;font-style:normal;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;letter-spacing:-.01em}
@@ -134,4 +134,12 @@ body:not(.hm) #home{display:none}
 @keyframes sh{to{background-position:-200% 0}}
 .rf{margin-top:10px;font-size:.64em;letter-spacing:.16em;text-transform:uppercase;opacity:.4;text-align:right}
 .seg{display:flex;gap:6px}.seg button{flex:1;padding:6px 0;font-size:1.1em}.seg .on{background:var(--fg);color:var(--bg);border-color:transparent}
-@media(max-width:700px){.node.res{width:300px}}
+
+
+/* профили устройств: дизайн один, раскладка и размеры подстраиваются */
+.dv-phone .sheet,.dv-phone #set{top:auto;left:8px;right:8px;width:auto;bottom:calc(92px + env(safe-area-inset-bottom));max-height:52vh}
+.dv-phone #nm{width:120px}.dv-phone .menu{right:8px}.dv-phone .node.res{width:300px}
+.dv-phone .dock button{min-width:58px}.dv-phone .hw{margin-top:3vh}
+.dv-tablet .node.res{width:340px}.dv-tablet .sheet{width:360px}
+.touch button{min-height:44px}.touch .pa button{min-height:38px}
+@media(max-height:480px){.dv-phone .sheet,.dv-phone #set{max-height:calc(100% - 150px)}}
