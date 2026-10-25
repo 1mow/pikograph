@@ -28,6 +28,7 @@ const snap=()=>JSON.stringify({n:s.n,e:s.e}),nm=id=>s.n.find(n=>n.id==id),idx=()
 function save(){if(!s)return;s.t=Date.now();sv('pk:p:'+s.id,s);setI([{id:s.id,name:s.name,c:s.n.length,t:s.t},...idx().filter(x=>x.id!=s.id)])}
 const SD=v=>v==null||v===''?undefined:[0,1,2,3].includes(+v)?+v:undefined;
 function clean(j){const ids=new Set,n=(j.n||[]).filter(x=>x&&x.id).map(x=>{ids.add(String(x.id));const o={id:String(x.id),x:+x.x||0,y:+x.y||0,t:T[x.t]?x.t:'obj',v:String(x.v??''),c:String(x.c??''),m:M[x.m]?x.m:null};
+if(o.t=='photo'&&/^data:image\/(png|jpeg);base64,/.test(x.img||''))o.img=x.img;
 if(o.t=='result'){o.it=(Array.isArray(x.it)?x.it:[]).slice(0,80).map(i=>({t:String(i.t??''),u:String(i.u??''),c:String(i.c??''),i:String(i.i??''),s:String(i.s??''),l:i.l?1:0}));o.st=x.st=='err'?'err':x.st=='ok'?'ok':(o.it.length?'ok':'err');o.src=String(x.src??'');o.p=x.p?String(x.p):null;o.q=String(x.q??'');o.er=String(x.er??'')}return o});
 return{n,e:(j.e||[]).filter(e=>e&&ids.has(String(e.a))&&ids.has(String(e.b))).map(e=>({id:String(e.id||uid()),a:String(e.a),b:String(e.b),l:String(e.l??''),d:[0,1,2,3].includes(+e.d)?+e.d:1,sa:SD(e.sa),sb:SD(e.sb)})),v:j.v&&j.v.k?{x:+j.v.x||0,y:+j.v.y||0,k:+j.v.k}:{x:0,y:0,k:1}}}
 function mk(name,d={}){const p={...clean(d),name:name||'Новый граф',id:uid(),t:Date.now()};sv('pk:p:'+p.id,p);setI([{id:p.id,name:p.name,c:p.n.length,t:p.t},...idx()]);return p.id}
@@ -74,7 +75,8 @@ function paint(r){const e=els[r.id];if(!e)return;const l0=e.querySelector('.rl')
 function nodes(){const w=$('#nd'),sc={};w.querySelectorAll('.rl').forEach(r=>sc[r.closest('.node').dataset.id]=r.scrollTop);w.innerHTML='';els={};
 s.n.forEach(n=>{const e=document.createElement('div'),t=T[n.t]||T.obj,r=n.t=='result';e.className='node glass'+(r?' res':'')+(sel&&sel.k=='n'&&sel.id==n.id?' s':'');e.dataset.id=n.id;
 if(r){e.innerHTML=resHTML(n);e.querySelector('em').textContent=n.v}
-else{e.innerHTML=`<div class="nh"><span class="ic">${I(IC[n.t]||IC.obj)}</span><small></small></div><b></b><i></i>${HD}`;e.querySelector('small').textContent=t[0];e.children[1].textContent=n.v||'—';e.children[2].textContent=n.c||''}
+else{e.innerHTML=`<div class="nh"><span class="ic">${I(IC[n.t]||IC.obj)}</span><small></small></div><b></b><i></i>${HD}`;e.querySelector('small').textContent=t[0];e.children[1].textContent=n.v||'—';e.children[2].textContent=n.c||'';
+if(n.t=='photo'&&n.img){const im=new Image;im.className='pim';im.draggable=false;im.alt='';im.onload=()=>edges();im.src=n.img;e.insertBefore(im,e.querySelector('.hd'))}}
 e.style.left=n.x+'px';e.style.top=n.y+'px';w.append(e);els[n.id]=e;const l=e.querySelector('.rl');if(l&&sc[n.id])l.scrollTop=sc[n.id]});edges();view();$('#hint').style.display=s.n.length?'none':'block'}
 const NV=[[0,-1],[1,0],[0,1],[-1,0]],anc=(n,el,i)=>[n.x+(i==1?el.offsetWidth:i==3?0:el.offsetWidth/2),n.y+(i==2?el.offsetHeight:i==0?0:el.offsetHeight/2)];
 /* ломаная со скруглёнными углами (угловые связи, как в Miro) */
@@ -107,6 +109,7 @@ function pick(k,id){sel=k?{k,id}:null;for(const i in els)els[i].classList.toggle
 /* ---------- панель редактирования ---------- */
 const XB=`<button class="ib" id="cl">${I(`<path d="${UI.x}"/>`)}</button>`,modes=c=>Object.entries(M).map(([k,v])=>`<option value="${k}" ${k==c?'selected':''}>${v[0]}</option>`).join('');
 const kill=n=>{const g=new Set([n.id,...s.n.filter(x=>x.p==n.id).map(x=>x.id)]);s.n=s.n.filter(x=>!g.has(x.id));s.e=s.e.filter(e=>!g.has(e.a)&&!g.has(e.b));commit();sel=null;nodes();panel()};
+const shrink=f=>new Promise((ok,no)=>{const u=URL.createObjectURL(f),im=new Image;im.onload=()=>{URL.revokeObjectURL(u);const k=Math.min(1,720/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(im.width*k));c.height=Math.max(1,Math.round(im.height*k));const x=c.getContext('2d'),png=/png/.test(f.type)||/\.png$/i.test(f.name);x.drawImage(im,0,0,c.width,c.height);let r=png?c.toDataURL('image/png'):'';if(!r||r.length>400000){x.globalCompositeOperation='destination-over';x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);r=c.toDataURL('image/jpeg',.85)}ok(r)};im.onerror=no;im.src=u});
 function panel(){const p=$('#pn');if(!s||!sel){p.classList.remove('o');return}p.classList.add('o');
 if(sel.k=='e'){const e=s.e.find(x=>x.id==sel.id);if(!e){pick(null);return}const d=e.d??1;
 p.innerHTML=`<div class="row hd2"><h3>Связь</h3>${XB}</div><label>Подпись</label><input id="el" value="${esc(e.l)}" placeholder="Например: владелец"><label>Направление стрелки</label><div class="seg">${[['0','—'],['1','→'],['2','←'],['3','↔']].map(([v,l])=>`<button data-d="${v}" class="${d==v?'on':''}">${l}</button>`).join('')}</div><div class="row"><button id="rv">⇄ Развернуть</button><button id="dl">Удалить</button></div>`;
@@ -119,13 +122,15 @@ $('#rq').onchange=x=>{n.q=x.target.value;save()};$('#pm').onchange=x=>{n.m=x.tar
 $('#so').onclick=()=>open(br(n.q),'_blank','noopener');$('#dl').onclick=()=>kill(n)}
 else{p.innerHTML=`<div class="row hd2"><span class="ic">${I(IC[n.t])}</span><h3>Редактирование</h3>${XB}</div>
 <label>Тип</label><select id="pt">${Object.entries(T).filter(([k])=>k!='result').map(([k,v])=>`<option value="${k}" ${k==n.t?'selected':''}>${v[0]}</option>`).join('')}</select>
-<label>Значение</label><textarea id="pv" rows="2">${esc(n.v)}</textarea><label>Заметки</label><textarea id="pc" rows="3">${esc(n.c)}</textarea>
+${n.t=='photo'?`<label>Фото</label><div class="row"><button id="pf">Открыть фото</button>${n.img?'<button id="px">Убрать</button>':''}</div><input type="file" id="pfi" accept="image/png,image/jpeg,.png,.jpg,.jpeg" hidden>`:`<label>Значение</label><textarea id="pv" rows="2">${esc(n.v)}</textarea>`}<label>Заметки</label><textarea id="pc" rows="3">${esc(n.c)}</textarea>
 <label>Источник поиска</label><select id="pm">${modes(n.m||T[n.t][1])}</select>
 <button class="pri" id="sr">Искать · результат появится блоком</button>
 <div class="row"><button id="du">Копия</button><button id="dl">Удалить</button></div>`;
 $('#pt').onchange=x=>{n.t=x.target.value;n.m=null;commit();nodes();panel()};
-$('#pv').oninput=x=>{n.v=x.target.value;els[n.id].children[1].textContent=n.v||'—';edges()};$('#pc').oninput=x=>{n.c=x.target.value;els[n.id].children[2].textContent=n.c;edges()};
-$('#pv').onchange=$('#pc').onchange=commit;$('#pm').onchange=x=>{n.m=x.target.value;save()};
+const pv=$('#pv');if(pv)pv.oninput=x=>{n.v=x.target.value;els[n.id].children[1].textContent=n.v||'—';edges()};$('#pc').oninput=x=>{n.c=x.target.value;els[n.id].children[2].textContent=n.c;edges()};
+if(pv)pv.onchange=commit;$('#pc').onchange=commit;
+if(n.t=='photo'){const fi=$('#pfi');$('#pf').onclick=()=>fi.click();fi.onchange=async x=>{const f=x.target.files[0];x.target.value='';if(!f)return;if(!/^image\/(png|jpeg)$/.test(f.type)&&!/\.(png|jpe?g)$/i.test(f.name))return toast('Поддерживаются только PNG и JPG');try{n.img=await shrink(f);if(!n.v)n.v=f.name.replace(/\.[^.]+$/,'');commit();nodes();panel()}catch{toast('Не удалось открыть фото')}};const px=$('#px');if(px)px.onclick=()=>{delete n.img;commit();nodes();panel()}}
+$('#pm').onchange=x=>{n.m=x.target.value;save()};
 $('#sr').onclick=()=>find(n);
 $('#du').onclick=()=>{const c={...n,id:uid(),x:n.x+30,y:n.y+30};s.n.push(c);commit();nodes();pick('n',c.id)};
 $('#dl').onclick=()=>kill(n)}}
