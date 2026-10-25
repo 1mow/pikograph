@@ -143,3 +143,6 @@ body:not(.hm) #home{display:none}
 .dv-tablet .node.res{width:340px}.dv-tablet .sheet{width:360px}
 .touch button{min-height:44px}.touch .pa button{min-height:38px}
 @media(max-height:480px){.dv-phone .sheet,.dv-phone #set{max-height:calc(100% - 150px)}}
+
+.np .ri{animation:none}
+.ri p{white-space:pre-wrap}
