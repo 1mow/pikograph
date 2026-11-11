@@ -29,7 +29,7 @@ function save(){if(!s)return;s.t=Date.now();sv('pk:p:'+s.id,s);setI([{id:s.id,na
 const SD=v=>v==null||v===''?undefined:[0,1,2,3].includes(+v)?+v:undefined;
 function clean(j){const ids=new Set,n=(j.n||[]).filter(x=>x&&x.id).map(x=>{ids.add(String(x.id));const o={id:String(x.id),x:+x.x||0,y:+x.y||0,t:T[x.t]?x.t:'obj',v:String(x.v??''),c:String(x.c??''),m:M[x.m]?x.m:null};
 if(o.t=='photo'&&/^data:image\/(png|jpeg);base64,/.test(x.img||''))o.img=x.img;
-if(o.t=='result'){o.it=(Array.isArray(x.it)?x.it:[]).slice(0,80).map(i=>({t:String(i.t??''),u:String(i.u??''),c:String(i.c??''),i:String(i.i??''),s:String(i.s??''),l:i.l?1:0}));o.st=x.st=='err'?'err':x.st=='ok'?'ok':(o.it.length?'ok':'err');o.src=String(x.src??'');o.p=x.p?String(x.p):null;o.q=String(x.q??'');o.er=String(x.er??'')}return o});
+if(o.t=='result'){o.job=/^[A-Za-z0-9_-]{10,64}$/.test(x.job||'')?x.job:null;o.it=(Array.isArray(x.it)?x.it:[]).slice(0,505).map(i=>({t:String(i.t??''),u:String(i.u??''),c:String(i.c??''),i:String(i.i??''),s:String(i.s??''),l:i.l?1:0}));o.st=x.st=='err'?'err':x.st=='ok'?'ok':(o.it.length?'ok':'err');o.src=String(x.src??'');o.p=x.p?String(x.p):null;o.q=String(x.q??'');o.er=String(x.er??'')}return o});
 return{n,e:(j.e||[]).filter(e=>e&&ids.has(String(e.a))&&ids.has(String(e.b))).map(e=>({id:String(e.id||uid()),a:String(e.a),b:String(e.b),l:String(e.l??''),d:[0,1,2,3].includes(+e.d)?+e.d:1,sa:SD(e.sa),sb:SD(e.sb)})),v:j.v&&j.v.k?{x:+j.v.x||0,y:+j.v.y||0,k:+j.v.k}:{x:0,y:0,k:1}}}
 function mk(name,d={}){const p={...clean(d),name:name||'Новый граф',id:uid(),t:Date.now()};sv('pk:p:'+p.id,p);setI([{id:p.id,name:p.name,c:p.n.length,t:p.t},...idx()]);return p.id}
 const go=id=>{if(location.hash=='#'+id)route();else location.hash=id};
@@ -67,7 +67,7 @@ g.backgroundSize=gs+'px '+gs+'px';g.backgroundPosition=v.x+'px '+v.y+'px'}
 const HD=[0,1,2,3].map(i=>`<div class="hd" data-s="${i}"></div>`).join('');
 const lst=(n,np)=>'<div class="rl'+(np?' np':'')+'">'+n.it.map((x,i)=>{let h='';try{h=new URL(x.u).hostname.replace(/^www\./,'')}catch{}return`<div class="ri" style="animation-delay:${Math.min(i,10)*40}ms"><span class="fv">${esc((h[0]||'•').toUpperCase())}</span><div>${/^https?:/.test(x.i)?`<img src="${esc(x.i)}" loading="lazy" referrerpolicy="no-referrer" alt="">`:''}<a href="${/^https?:/.test(x.u)?esc(x.u):'#'}" target="_blank" rel="noopener noreferrer">${esc(x.t)}</a><small>${esc(x.s||h)}${x.s&&h&&!x.l?' · '+esc(h):''}</small>${x.c?`<p>${esc(x.c)}</p>`:''}${x.l?'':`<button data-act="add" data-i="${i}">+ в граф</button>`}</div></div>`}).join('')+'</div>';
 function resHTML(n){const hd=`<div class="nh"><span class="ic">${I(IC.result)}</span><div class="rt"><small>Результаты поиска</small><em></em></div><span class="cnt">${n.st=='ok'||n.it.length?n.it.filter(x=>!x.l).length:''}</span></div>`;let b;
-if(n.st=='load')b=(n.it.length?lst(n,1):'<div class="sk"><span></span><span></span><span></span></div>')+`<p class="rm">Ищу в открытых источниках… ${n.pg?n.pg[0]+' / '+n.pg[1]:''}</p>`;
+if(n.st=='load')b=(n.it.length?lst(n,1):'<div class="sk"><span></span><span></span><span></span></div>')+`<p class="rm">Ищу в открытых источниках… ${n.pg?n.pg[0]+' / '+n.pg[1]:''}</p><button data-act="stop">Остановить поиск</button>`;
 else if(n.st=='err'||!n.it.length)b=`<p class="rm">${esc(n.st=='err'?(n.er||'Поиск прерван.'):'Ничего не найдено.')}</p><button data-act="rt">Повторить</button>`;
 else b=lst(n);
 return hd+(n.st=='ok'&&n.er?`<p class="rm">${esc(n.er)}</p>`:'')+b+(n.src&&n.st=='ok'?`<div class="rf">${esc(n.src)}</div>`:'')+HD}
@@ -108,7 +108,7 @@ function pick(k,id){sel=k?{k,id}:null;for(const i in els)els[i].classList.toggle
 
 /* ---------- панель редактирования ---------- */
 const XB=`<button class="ib" id="cl">${I(`<path d="${UI.x}"/>`)}</button>`,modes=c=>Object.entries(M).map(([k,v])=>`<option value="${k}" ${k==c?'selected':''}>${v[0]}</option>`).join('');
-const kill=n=>{const g=new Set([n.id,...s.n.filter(x=>x.p==n.id).map(x=>x.id)]);s.n=s.n.filter(x=>!g.has(x.id));s.e=s.e.filter(e=>!g.has(e.a)&&!g.has(e.b));commit();sel=null;nodes();panel()};
+const kill=n=>{const g=new Set([n.id,...s.n.filter(x=>x.p==n.id).map(x=>x.id)]);for(const id of g){const c=runningSearches.get(id);if(c)SearchJobs.cancel(c).catch(()=>{})}s.n=s.n.filter(x=>!g.has(x.id));s.e=s.e.filter(e=>!g.has(e.a)&&!g.has(e.b));commit();sel=null;nodes();panel()};
 const shrink=f=>new Promise((ok,no)=>{const u=URL.createObjectURL(f),im=new Image;im.onload=()=>{URL.revokeObjectURL(u);const k=Math.min(1,720/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(im.width*k));c.height=Math.max(1,Math.round(im.height*k));const x=c.getContext('2d'),png=/png/.test(f.type)||/\.png$/i.test(f.name);x.drawImage(im,0,0,c.width,c.height);let r=png?c.toDataURL('image/png'):'';if(!r||r.length>400000){x.globalCompositeOperation='destination-over';x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);r=c.toDataURL('image/jpeg',.85)}ok(r)};im.onerror=no;im.src=u});
 function panel(){const p=$('#pn');if(!s||!sel){p.classList.remove('o');return}p.classList.add('o');
 if(sel.k=='e'){const e=s.e.find(x=>x.id==sel.id);if(!e){pick(null);return}const d=e.d??1;
@@ -134,13 +134,14 @@ $('#pm').onchange=x=>{n.m=x.target.value;save()};
 $('#sr').onclick=()=>find(n);
 $('#du').onclick=()=>{const c={...n,id:uid(),x:n.x+30,y:n.y+30};s.n.push(c);commit();nodes();pick('n',c.id)};
 $('#dl').onclick=()=>kill(n)}}
+if(sel?.k==='n') { const n=nm(sel.id); const b=document.createElement('button');b.textContent='Источники · 1000';b.onclick=()=>openSourceCatalog(n.m||T[n.t][1],n.q||n.v||'',n.job);p.append(b);if(n.job){const report=document.createElement('button');report.textContent='Скачать отчёт поиска';report.onclick=()=>SearchJobs.download(n.job).catch(e=>toast(e.message));p.append(report);} }
 $('#cl').onclick=()=>pick(null)}
 
 /* ---------- OSINT-поиск: только открытые API без ключей и регистрации ---------- */
 const br=q=>'https://duckduckgo.com/?q='+encodeURIComponent(q);
 const E=encodeURIComponent,cut=(t,n=400)=>String(t||'').slice(0,n);
 /* 404 = «ничего нет» (не ошибка); любая другая ошибка просто выключает один источник */
-const tf=async(u,ms=8000,h)=>{const c=new AbortController,t=setTimeout(()=>c.abort(),ms);try{const r=await fetch(u,{signal:c.signal,credentials:'omit',...(h?{headers:h}:{})});if(r.status==404)return null;if(!r.ok)throw new Error(r.status);return await r.json()}finally{clearTimeout(t)}};
+const tf=async(u,ms=8000,h)=>{const c=new AbortController,t=setTimeout(()=>c.abort(),ms);try{const r=await fetch('/api/fetch?url='+encodeURIComponent(u),{signal:c.signal,credentials:'same-origin',...(h?{headers:h}:{})});if(r.status==404)return null;if(!r.ok)throw new Error(r.status);return await r.json()}finally{clearTimeout(t)}};
 const dt=h=>{try{return(new DOMParser().parseFromString(String(h||''),'text/html').body.textContent||'').replace(/\s+/g,' ').trim()}catch{return''}};
 const isIP=q=>/^(\d{1,3}\.){3}\d{1,3}$/.test(q)||(/^[0-9a-f:]{3,39}$/i.test(q)&&q.includes(':'));
 const tg=q=>{q=q.trim();return isIP(q)?q:q.replace(/^[a-z]+:\/\//i,'').replace(/^.*@/,'').split(/[\/?#:]/)[0].toLowerCase()};
@@ -347,24 +348,41 @@ if(m=='email')l.unshift(['Epieos','https://epieos.com/?q='+e+'&t=email']);
 if(m=='net')l=[['Whois','https://who.is/whois/'+h],['Shodan','https://www.shodan.io/search?query='+E(h)],['Wayback','https://web.archive.org/web/*/'+h],l[0]];
 if(m=='photo')l=/^https?:/i.test(q.trim())?[['Google Lens','https://lens.google.com/uploadbyurl?url='+e],['Yandex Images','https://yandex.com/images/search?rpt=imageview&url='+e],['TinEye','https://tineye.com/search?url='+e]]:[['Google Images','https://www.google.com/search?tbm=isch&q='+e],['Yandex Images','https://yandex.com/images/search?text='+e],['Bing Images','https://www.bing.com/images/search?q='+e]];
 return l.slice(0,5).map(([n,u])=>({t:n+' · открыть поиск',u,c:'Откроется в новой вкладке — запрос выполнит сам сайт',i:'',s:'ссылка',l:1}))};
-/* опрос идёт пулом по 12 запросов; результаты по мере прихода передаются в cb */
-async function query(m,q,cb){q=q.trim();const jobs=[...(st.inst?[['SearXNG',searx]]:[]),...(PV[m]||PV.gen)],ls=jobs.map(()=>[]),ok=new Set;let resp=0,dn=0,nx=0,lt=0;
-const build=()=>{const o=[],seen=new Set;for(let n=0;n<4;n++)ls.forEach(l=>{const x=l[n];if(x&&!seen.has(x.u)&&o.length<70){seen.add(x.u);o.push(x)}});return o};
-const run=async()=>{while(nx<jobs.length){const k=nx++;try{const a=((await jobs[k][1](q))||[]).filter(x=>x&&x.u);resp++;if(a.length){ls[k]=a.slice(0,4).map(x=>({...x,s:jobs[k][0]}));ok.add(jobs[k][0])}}catch{}dn++;if(cb&&Date.now()-lt>600&&dn<jobs.length){lt=Date.now();cb(build(),dn,jobs.length)}}};
-await Promise.all(Array.from({length:Math.min(12,jobs.length)},run));
+/* Профильные API и серверная очередь 1000 ресурсов; результаты поступают постепенно. */
+const runningSearches=new Map;
+async function query(m,q,cb,control={}){
+q=Search.normalize(m,q);if(!q)throw new Error('Введите запрос');
+const jobs=[...(st.inst?[['SearXNG',searx]]:[]),...(PV[m]||PV.gen)];
+const ls=jobs.map(()=>[]),catalogItems=[],ok=new Set;let resp=0,dn=0,nx=0,lt=0,errors=0,catalog=null,catalogError='';
+const build=()=>Search.rank([...ls.flat(),...catalogItems],q).slice(0,500);
+const progress=force=>{if(cb&&(force||Date.now()-lt>500)){lt=Date.now();cb(build(),dn+(catalog?.completed||0),jobs.length+(catalog?.total||1000),catalog)}};
+const catalogTask=SearchJobs.run(m,q,snapshot=>{catalog=snapshot;catalogItems.push(...snapshot.items);progress(true)},control).catch(e=>{catalogError=e.message;progress(true)});
+const run=async()=>{while(nx<jobs.length&&!control.cancelled){const k=nx++;try{
+const a=((await jobs[k][1](q))||[]).filter(x=>x&&Search.safeURL(x.u));resp++;
+if(a.length){ls[k]=a.slice(0,12).map(x=>({...x,s:jobs[k][0]}));ok.add(jobs[k][0])}
+}catch{errors++}dn++;progress(false)}};
+await Promise.all([...Array.from({length:Math.min(6,jobs.length)},run),catalogTask]);
 const items=build();items.push(...LINKS(m,q));
-return{items,src:ok.size?`Источников: ${ok.size} из ${jobs.length} · ${[...ok].slice(0,3).join(', ')}${ok.size>3?'…':''}`:'ссылки',note:ok.size?'':resp*2>jobs.length?'В открытых базах ничего не найдено — ниже ссылки для ручного поиска.':'Онлайн-источники сейчас не ответили (нет сети или блокировщик). Ниже ссылки для ручного поиска.'}}
+const info=catalog?`Ресурсы: ${catalog.completed}/${catalog.total} · ответили: ${catalog.counts.answered} · с результатами: ${catalog.counts.matched} · ошибок: ${catalog.counts.errors}`:'Поиск по 1000 ресурсам не запустился';
+let note='Найденные упоминания требуют проверки. Для части ресурсов используется поисковый индекс.';
+if(control.cancelled||catalog?.state==='cancelled')note='Поиск остановлен. Показаны уже полученные результаты.';
+if(catalogError)note='Поиск по 1000 ресурсам не завершён: '+catalogError+'. Полученные результаты сохранены.';
+if(catalog?.state==='done'&&catalog.counts.answered===0)note='Ни один из 1000 ресурсов не ответил успешно. Проверьте сеть, SearXNG и отчёт ошибок.';
+if(catalog?.counts.partial)note+=' Часть поисковых движков ответила не полностью.';
+return{items,src:info+` · профильные API: ${resp}/${jobs.length} · ошибок API: ${errors}`,note};}
+
 function spot(n){let x=n.x+(els[n.id]?.offsetWidth||st.nw)+110,y=n.y;while(s.n.some(o=>Math.abs(o.x-x)<350&&Math.abs(o.y-y)<280))y+=300;return[x,y]}
 async function find(n,r){const m=r?r.m:(n.m||T[n.t][1]),q=(r?r.q:n.v).trim();if(!q)return toast('Введите значение для поиска');
 if(!r)r=s.n.find(x=>x.t=='result'&&x.p==n.id&&x.m==m);
 if(!r){const[x,y]=spot(n);r={id:uid(),x,y,t:'result',v:'',c:'',p:n.id,m,it:[],st:'load',src:'',q,er:''};s.n.push(r);s.e.push({id:uid(),a:n.id,b:r.id,l:M[m][0],d:1});commit()}
+if(runningSearches.has(r.id))return toast('Поиск уже идёт. Дождитесь завершения или остановите его.');const control={cancelled:false,jobId:null};runningSearches.set(r.id,control);r.job=null;
 r.q=q;r.st='load';r.it=[];r.pg=null;r.v=M[m][0]+' · '+q;const S=s;nodes();els[r.id].classList.add('pp');
 const b=els[r.id].getBoundingClientRect();if(b.right>innerWidth||b.bottom>innerHeight-90||b.left<0||b.top<0)fit();if(innerWidth<700)pick(null);
-try{const o=await query(m,q,(l,d,t)=>{if(s===S&&nm(r.id)&&r.st=='load'){r.it=l;r.pg=[d,t];paint(r)}});r.it=o.items;r.src=o.src;r.st='ok';r.er=o.note||''}catch(e){r.it=[];r.st='err';r.er=e.message}r.pg=null;
+try{const o=await query(m,q,(l,d,t,catalog)=>{if(catalog)r.job=catalog.id;if(s===S&&nm(r.id)&&r.st=='load'){r.it=l;r.pg=[d,t];paint(r)}},control);r.it=o.items;r.src=o.src;r.st='ok';r.er=o.note||''}catch(e){r.it=[];r.st='err';r.er=e.message}r.pg=null;runningSearches.delete(r.id);
 if(s===S&&nm(r.id)){last=snap();save();nodes()}else if(S!==s){sv('pk:p:'+S.id,S)}}
 const retry=r=>find(nm(r.p)||null,r);
 function addFrom(r,i){const x=r.it[i];if(!x||x.l)return;let h='';try{h=new URL(x.u).hostname.replace(/^www\./,'')}catch{}const c={id:uid(),x:r.x+400,y:r.y+Math.random()*140,t:'obj',v:String(x.t).replace(/ · [^·]+$/,'')||x.t,c:[x.c,'— '+(x.s||h)].filter(Boolean).join('\n')};s.n.push(c);s.e.push({id:uid(),a:r.id,b:c.id,l:'',d:1});commit();nodes();els[c.id].classList.add('pp');toast('Добавлено в граф')}
-$('#nd').onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;const n=nm(b.closest('.node').dataset.id);if(!n)return;if(b.dataset.act=='rt')retry(n);else addFrom(n,+b.dataset.i)};
+$('#nd').onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;const n=nm(b.closest('.node').dataset.id);if(!n)return;if(b.dataset.act=='rt')retry(n);else if(b.dataset.act=='stop'){const control=runningSearches.get(n.id);if(control)SearchJobs.cancel(control).catch(e=>toast(e.message));else toast('Поиск уже завершён')}else addFrom(n,+b.dataset.i)};
 
 /* ---------- настройки ---------- */
 const SET=[['f','Шрифт','select',FONTS],['fs','Размер текста','range',10,22,1],['th','Тема','select',[['d','Чёрная'],['l','Белая']]],['bl','Размытие стекла','range',0,60,1],['ga','Плотность стекла','range',0,.3,.01],['br','Яркость границ','range',.04,.4,.02],['r','Скругление','range',0,36,1],['nw','Ширина карточек','range',120,340,5],['ew','Толщина связей','range',.5,6,.5],['ec','Линии связей','select',[['c','Изогнутые'],['e','Угловые'],['s','Прямые']]],['ar','Стрелки','check'],['pt','Частицы на всех связях','check'],['gr','Сетка','select',[['dots','Точки'],['lines','Линии'],['none','Нет']]],['gs','Шаг сетки','range',12,90,2],['gn','Зерно плёнки','range',0,.2,.01],['an','Анимация фона','check'],['inst','Свой SearXNG (дополнительный источник)','text']];
@@ -432,7 +450,7 @@ document.addEventListener('pointerdown',e=>{if(!e.target.closest('#mn,#mb'))$('#
 $('#mn').onclick=e=>{const a=e.target.closest('button')?.dataset.a;if(!a)return;$('#mn').classList.remove('o');
 if(a=='fit')fit();else if(a=='lay')layout();else if(a=='png')png();
 else if(a=='json')dl(URL.createObjectURL(new Blob([JSON.stringify(s,null,1)],{type:'application/json'})),(s.name||'graph')+'.json');
-else if(a=='clr'){if(!s.n.length)return;s.n=[];s.e=[];commit();sel=null;nodes();panel();toast('Граф очищен — кнопка ↶ вернёт всё назад')}
+else if(a=='clr'){if(!s.n.length)return;for(const n of s.n){const c=runningSearches.get(n.id);if(c)SearchJobs.cancel(c).catch(()=>{})}s.n=[];s.e=[];commit();sel=null;nodes();panel();toast('Граф очищен — кнопка ↶ вернёт всё назад')}
 else if(a=='set')$('#set').classList.toggle('o')};
 $('#dk').innerHTML=Object.entries(T).filter(([k])=>k!='result').map(([k,v])=>`<button data-t="${k}">${I(IC[k])}${v[0]}</button>`).join('');
 $('#dk').onclick=e=>{const b=e.target.closest('button');if(b&&s){if(innerWidth<700)$('#set').classList.remove('o');add(b.dataset.t)}};

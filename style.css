@@ -148,3 +148,5 @@ body:not(.hm) #home{display:none}
 .by{margin-top:46px;opacity:.5;font-size:.82em;letter-spacing:.03em}.by a{color:var(--fg);text-decoration:none;border-bottom:1px solid rgba(var(--c),.3)}.by a:hover{opacity:.7}
 .np .ri{animation:none}
 .ri p{white-space:pre-wrap}
+
+.auth-pending > :not(#auth-gate):not(script){visibility:hidden}.auth-cover{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:var(--bg);padding:20px;overflow:auto}.auth-box{color:var(--fg);background:var(--bg);border:1px solid rgba(var(--c),.2);border-radius:var(--r);padding:24px;width:min(620px,94vw);max-height:90dvh;overflow:auto}.auth-box p,.auth-box .row{margin:16px 0}.auth-box button{padding:10px 14px}.auth-box a{color:inherit}.auth-box::backdrop{background:#000b}dialog.auth-box{margin:auto}.auth-box img{border-radius:50%;object-fit:cover}#source-list a{display:block;padding:9px 0;border-bottom:1px solid rgba(var(--c),.12)}#source-filter{width:100%;margin-top:8px}

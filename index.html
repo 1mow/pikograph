@@ -9,13 +9,11 @@
 <meta property="og:title" content="Pikograph"><meta property="og:description" content="Графы связей для OSINT. Поиск по открытым источникам прямо в графе.">
 <meta name="application-name" content="Pikograph"><meta name="apple-mobile-web-app-title" content="Pikograph">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600&family=Manrope:wght@400;600&family=Syne:wght@400;700&family=Unbounded:wght@400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=JetBrains+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="hm">
+<body class="hm auth-pending">
 <div id="amb"><i></i><i></i><i></i></div>
 <div id="stage"><div id="world">
   <svg id="sv"><g id="eg"></g><path id="tmp" class="ln"/></svg>
@@ -39,7 +37,7 @@
   <button data-a="png">Экспорт PNG</button>
   <button data-a="json">Экспорт JSON</button><hr>
   <button data-a="clr">Очистить граф</button>
-  <button data-a="set">Настройки</button>
+  <button data-a="set">Настройки</button><button class="profile-open">Профиль</button>
 </div>
 <nav class="dock glass" id="dk"></nav>
 <aside class="sheet glass" id="pn"></aside>
@@ -51,14 +49,17 @@
     <svg class="logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#0a0a0a"/><rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path d="M21 43L43 21" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/><circle cx="19" cy="45" r="9" fill="#fff"/><circle cx="45" cy="19" r="9" fill="#0a0a0a" stroke="#fff" stroke-width="3.6"/></svg>
     <h1>pikograph</h1>
     <p class="sub">Графы связей для OSINT: люди, номера, аккаунты, домены, организации. Один холст, поиск по открытым источникам прямо из карточки.</p>
-    <div class="chips"><span>Без регистрации</span><span>Данные только у вас</span></div>
-    <div class="row"><button class="pri" id="hn">＋ Новый проект</button><button id="hi">Импорт JSON</button><button id="hs">Настройки</button></div>
+    <div class="chips"><span>Вход через Telegram</span><span>Данные только у вас</span></div>
+    <div class="row"><button class="pri" id="hn">＋ Новый проект</button><button id="hi">Импорт JSON</button><button id="hs">Настройки</button><button class="profile-open">Профиль</button></div>
     <h3 class="ph">Проекты</h3>
     <div id="pl"></div>
-    <p class="by">Сделано разработчиком <a href="https://t.me/incidum" target="_blank" rel="noopener noreferrer">@incidum</a> · канал <a href="https://t.me/PikoDev" target="_blank" rel="noopener noreferrer">t.me/PikoDev</a></p>
+    <p class="by">Сделано разработчиком <a href="https://t.me/incidum" target="_blank" rel="noopener noreferrer">@incidum</a> · канал <a href="https://t.me/pikograph_Blog" target="_blank" rel="noopener noreferrer">t.me/pikograph_Blog</a></p>
   </div>
 </section>
 <input type="file" id="fi" accept=".json,application/json" hidden>
-<script src="app.js"></script>
+<script src="auth.js"></script>
+<section id="auth-gate" class="auth-cover"><div class="glass auth-box"><h1>pikograph</h1><p>Авторизуйтесь через Telegram, чтобы продолжить.</p><button id="login-start" class="pri">Войти через Telegram</button><p><a id="bot-link" href="https://t.me/pikograph_entry_robot" target="_blank" rel="noopener">Открыть @pikograph_entry_robot</a></p><p>Нажмите «Войти», откройте персональную ссылку и отправьте /start. Подпишитесь на <a href="https://t.me/pikograph_Blog" target="_blank" rel="noopener">канал</a>, затем подтвердите вход в исходном браузере.</p><p id="auth-message" role="status"></p></div></section>
+<dialog id="profile-dialog" class="glass auth-box"><h2>Профиль</h2><img id="profile-avatar" width="80" height="80" alt="Фото профиля Telegram"><p id="profile-name"></p><p id="profile-username"></p><small>Данные из Telegram. Редактирование на сайте недоступно.</small><div class="row"><button id="profile-close">Закрыть</button><button id="logout">Выйти</button></div></dialog>
+<dialog id="source-dialog" class="glass auth-box"><h2>Источники · 1000</h2><p>Кнопка «Искать» автоматически опрашивает все 1000 ресурсов. Здесь показаны источники и статусы последнего поиска. Упоминание не подтверждает личность. Фото ищутся по текстовому описанию.</p><label>Источник<input id="source-filter" placeholder="Название или домен"></label><p id="source-query"></p><div id="source-list"></div><div class="row"><button id="source-prev">Назад</button><span id="source-page"></span><button id="source-next">Далее</button><button id="source-close">Закрыть</button></div></dialog>
 </body>
 </html>

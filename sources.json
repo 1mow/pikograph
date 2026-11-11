@@ -1,0 +1,6005 @@
+{
+ "description": "1000 ресурсов для автоматического поиска: прямые MediaWiki API и поиск по индексу SearXNG с ограничением домена. Каждый ресурс получает запрос и отдельный статус.",
+ "sources": [
+  {
+   "name": "ab.wikipedia.org",
+   "host": "ab.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ace.wikipedia.org",
+   "host": "ace.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ady.wikipedia.org",
+   "host": "ady.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "af.wikipedia.org",
+   "host": "af.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "af.wikibooks.org",
+   "host": "af.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "af.wikiquote.org",
+   "host": "af.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "af.wiktionary.org",
+   "host": "af.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "als.wikipedia.org",
+   "host": "als.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "alt.wikipedia.org",
+   "host": "alt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ami.wikipedia.org",
+   "host": "ami.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "am.wikipedia.org",
+   "host": "am.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "am.wiktionary.org",
+   "host": "am.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ang.wikipedia.org",
+   "host": "ang.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ang.wiktionary.org",
+   "host": "ang.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ann.wikipedia.org",
+   "host": "ann.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "anp.wikipedia.org",
+   "host": "anp.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "an.wikipedia.org",
+   "host": "an.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "an.wiktionary.org",
+   "host": "an.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "arc.wikipedia.org",
+   "host": "arc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wikipedia.org",
+   "host": "ar.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wikibooks.org",
+   "host": "ar.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wikiquote.org",
+   "host": "ar.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wikisource.org",
+   "host": "ar.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wikiversity.org",
+   "host": "ar.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ar.wiktionary.org",
+   "host": "ar.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ary.wikipedia.org",
+   "host": "ary.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "arz.wikipedia.org",
+   "host": "arz.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ast.wikipedia.org",
+   "host": "ast.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ast.wiktionary.org",
+   "host": "ast.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "as.wikipedia.org",
+   "host": "as.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "as.wikiquote.org",
+   "host": "as.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "as.wikisource.org",
+   "host": "as.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "atj.wikipedia.org",
+   "host": "atj.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "avk.wikipedia.org",
+   "host": "avk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "av.wikipedia.org",
+   "host": "av.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "awa.wikipedia.org",
+   "host": "awa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ay.wikipedia.org",
+   "host": "ay.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ay.wiktionary.org",
+   "host": "ay.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "azb.wikipedia.org",
+   "host": "azb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "az.wikipedia.org",
+   "host": "az.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "az.wikibooks.org",
+   "host": "az.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "az.wikiquote.org",
+   "host": "az.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "az.wikisource.org",
+   "host": "az.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "az.wiktionary.org",
+   "host": "az.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ban.wikipedia.org",
+   "host": "ban.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ban.wikisource.org",
+   "host": "ban.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bar.wikipedia.org",
+   "host": "bar.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bat-smg.wikipedia.org",
+   "host": "bat-smg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ba.wikipedia.org",
+   "host": "ba.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ba.wikibooks.org",
+   "host": "ba.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bbc.wikipedia.org",
+   "host": "bbc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bcl.wikipedia.org",
+   "host": "bcl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bcl.wikiquote.org",
+   "host": "bcl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bcl.wikisource.org",
+   "host": "bcl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bcl.wiktionary.org",
+   "host": "bcl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bdr.wikipedia.org",
+   "host": "bdr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be-tarask.wikipedia.org",
+   "host": "be-tarask.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be.wikipedia.org",
+   "host": "be.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be.wikibooks.org",
+   "host": "be.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be.wikiquote.org",
+   "host": "be.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be.wikisource.org",
+   "host": "be.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "be.wiktionary.org",
+   "host": "be.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bew.wikipedia.org",
+   "host": "bew.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bew.wiktionary.org",
+   "host": "bew.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bg.wikipedia.org",
+   "host": "bg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bg.wikibooks.org",
+   "host": "bg.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bg.wikiquote.org",
+   "host": "bg.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bg.wikisource.org",
+   "host": "bg.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bg.wiktionary.org",
+   "host": "bg.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bh.wikipedia.org",
+   "host": "bh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bi.wikipedia.org",
+   "host": "bi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bjn.wikipedia.org",
+   "host": "bjn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bjn.wikiquote.org",
+   "host": "bjn.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bjn.wiktionary.org",
+   "host": "bjn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "blk.wikipedia.org",
+   "host": "blk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "blk.wiktionary.org",
+   "host": "blk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bm.wikipedia.org",
+   "host": "bm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wikipedia.org",
+   "host": "bn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wikibooks.org",
+   "host": "bn.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wikiquote.org",
+   "host": "bn.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wikisource.org",
+   "host": "bn.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wikivoyage.org",
+   "host": "bn.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bn.wiktionary.org",
+   "host": "bn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bol.wikipedia.org",
+   "host": "bol.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bo.wikipedia.org",
+   "host": "bo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bpy.wikipedia.org",
+   "host": "bpy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "br.wikipedia.org",
+   "host": "br.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "br.wikiquote.org",
+   "host": "br.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "br.wikisource.org",
+   "host": "br.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "br.wiktionary.org",
+   "host": "br.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bs.wikipedia.org",
+   "host": "bs.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bs.wikibooks.org",
+   "host": "bs.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bs.wikiquote.org",
+   "host": "bs.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bs.wikisource.org",
+   "host": "bs.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "btm.wikipedia.org",
+   "host": "btm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "btm.wiktionary.org",
+   "host": "btm.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bug.wikipedia.org",
+   "host": "bug.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "bxr.wikipedia.org",
+   "host": "bxr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ca.wikipedia.org",
+   "host": "ca.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ca.wikibooks.org",
+   "host": "ca.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ca.wikiquote.org",
+   "host": "ca.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ca.wikisource.org",
+   "host": "ca.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ca.wiktionary.org",
+   "host": "ca.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cbk-zam.wikipedia.org",
+   "host": "cbk-zam.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cdo.wikipedia.org",
+   "host": "cdo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ceb.wikipedia.org",
+   "host": "ceb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ce.wikipedia.org",
+   "host": "ce.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "chr.wikipedia.org",
+   "host": "chr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "chr.wiktionary.org",
+   "host": "chr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ch.wikipedia.org",
+   "host": "ch.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "chy.wikipedia.org",
+   "host": "chy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ckb.wikipedia.org",
+   "host": "ckb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ckb.wiktionary.org",
+   "host": "ckb.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "co.wikipedia.org",
+   "host": "co.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "co.wiktionary.org",
+   "host": "co.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "crh.wikipedia.org",
+   "host": "crh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "csb.wikipedia.org",
+   "host": "csb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "csb.wiktionary.org",
+   "host": "csb.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikipedia.org",
+   "host": "cs.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikibooks.org",
+   "host": "cs.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikiquote.org",
+   "host": "cs.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikisource.org",
+   "host": "cs.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikiversity.org",
+   "host": "cs.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wikivoyage.org",
+   "host": "cs.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cs.wiktionary.org",
+   "host": "cs.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cu.wikipedia.org",
+   "host": "cu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cv.wikipedia.org",
+   "host": "cv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cv.wikibooks.org",
+   "host": "cv.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cy.wikipedia.org",
+   "host": "cy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cy.wikibooks.org",
+   "host": "cy.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cy.wikiquote.org",
+   "host": "cy.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cy.wikisource.org",
+   "host": "cy.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "cy.wiktionary.org",
+   "host": "cy.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dag.wikipedia.org",
+   "host": "dag.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "da.wikipedia.org",
+   "host": "da.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "da.wikibooks.org",
+   "host": "da.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "da.wikiquote.org",
+   "host": "da.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "da.wikisource.org",
+   "host": "da.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "da.wiktionary.org",
+   "host": "da.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikipedia.org",
+   "host": "de.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikibooks.org",
+   "host": "de.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikiquote.org",
+   "host": "de.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikisource.org",
+   "host": "de.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikiversity.org",
+   "host": "de.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wikivoyage.org",
+   "host": "de.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "de.wiktionary.org",
+   "host": "de.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dga.wikipedia.org",
+   "host": "dga.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "din.wikipedia.org",
+   "host": "din.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "diq.wikipedia.org",
+   "host": "diq.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "diq.wiktionary.org",
+   "host": "diq.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dsb.wikipedia.org",
+   "host": "dsb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dtp.wikipedia.org",
+   "host": "dtp.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dty.wikipedia.org",
+   "host": "dty.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dv.wikipedia.org",
+   "host": "dv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dv.wiktionary.org",
+   "host": "dv.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "dz.wikipedia.org",
+   "host": "dz.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ee.wikipedia.org",
+   "host": "ee.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikipedia.org",
+   "host": "el.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikibooks.org",
+   "host": "el.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikiquote.org",
+   "host": "el.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikisource.org",
+   "host": "el.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikiversity.org",
+   "host": "el.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wikivoyage.org",
+   "host": "el.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "el.wiktionary.org",
+   "host": "el.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eml.wikipedia.org",
+   "host": "eml.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikipedia.org",
+   "host": "en.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikibooks.org",
+   "host": "en.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikiquote.org",
+   "host": "en.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikisource.org",
+   "host": "en.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikiversity.org",
+   "host": "en.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wikivoyage.org",
+   "host": "en.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "en.wiktionary.org",
+   "host": "en.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wikipedia.org",
+   "host": "eo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wikibooks.org",
+   "host": "eo.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wikiquote.org",
+   "host": "eo.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wikisource.org",
+   "host": "eo.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wikivoyage.org",
+   "host": "eo.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eo.wiktionary.org",
+   "host": "eo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikipedia.org",
+   "host": "es.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikibooks.org",
+   "host": "es.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikiquote.org",
+   "host": "es.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikisource.org",
+   "host": "es.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikiversity.org",
+   "host": "es.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wikivoyage.org",
+   "host": "es.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "es.wiktionary.org",
+   "host": "es.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "et.wikipedia.org",
+   "host": "et.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "et.wikibooks.org",
+   "host": "et.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "et.wikiquote.org",
+   "host": "et.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "et.wikisource.org",
+   "host": "et.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "et.wiktionary.org",
+   "host": "et.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eu.wikipedia.org",
+   "host": "eu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eu.wikibooks.org",
+   "host": "eu.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eu.wikiquote.org",
+   "host": "eu.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eu.wikisource.org",
+   "host": "eu.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "eu.wiktionary.org",
+   "host": "eu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ext.wikipedia.org",
+   "host": "ext.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fat.wikipedia.org",
+   "host": "fat.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wikipedia.org",
+   "host": "fa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wikibooks.org",
+   "host": "fa.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wikiquote.org",
+   "host": "fa.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wikisource.org",
+   "host": "fa.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wikivoyage.org",
+   "host": "fa.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fa.wiktionary.org",
+   "host": "fa.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ff.wikipedia.org",
+   "host": "ff.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fiu-vro.wikipedia.org",
+   "host": "fiu-vro.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikipedia.org",
+   "host": "fi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikibooks.org",
+   "host": "fi.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikiquote.org",
+   "host": "fi.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikisource.org",
+   "host": "fi.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikiversity.org",
+   "host": "fi.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wikivoyage.org",
+   "host": "fi.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fi.wiktionary.org",
+   "host": "fi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fj.wikipedia.org",
+   "host": "fj.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fj.wiktionary.org",
+   "host": "fj.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fon.wikipedia.org",
+   "host": "fon.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fo.wikipedia.org",
+   "host": "fo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fo.wikisource.org",
+   "host": "fo.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fo.wiktionary.org",
+   "host": "fo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "frp.wikipedia.org",
+   "host": "frp.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "frr.wikipedia.org",
+   "host": "frr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikipedia.org",
+   "host": "fr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikibooks.org",
+   "host": "fr.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikiquote.org",
+   "host": "fr.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikisource.org",
+   "host": "fr.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikiversity.org",
+   "host": "fr.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wikivoyage.org",
+   "host": "fr.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fr.wiktionary.org",
+   "host": "fr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fur.wikipedia.org",
+   "host": "fur.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fy.wikipedia.org",
+   "host": "fy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fy.wikibooks.org",
+   "host": "fy.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "fy.wiktionary.org",
+   "host": "fy.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gag.wikipedia.org",
+   "host": "gag.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gan.wikipedia.org",
+   "host": "gan.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ga.wikipedia.org",
+   "host": "ga.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ga.wiktionary.org",
+   "host": "ga.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gcr.wikipedia.org",
+   "host": "gcr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gd.wikipedia.org",
+   "host": "gd.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gd.wiktionary.org",
+   "host": "gd.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "glk.wikipedia.org",
+   "host": "glk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gl.wikipedia.org",
+   "host": "gl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gl.wikibooks.org",
+   "host": "gl.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gl.wikiquote.org",
+   "host": "gl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gl.wikisource.org",
+   "host": "gl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gl.wiktionary.org",
+   "host": "gl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gn.wikipedia.org",
+   "host": "gn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gn.wiktionary.org",
+   "host": "gn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gom.wikipedia.org",
+   "host": "gom.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gom.wiktionary.org",
+   "host": "gom.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gor.wikipedia.org",
+   "host": "gor.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gor.wikiquote.org",
+   "host": "gor.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gor.wiktionary.org",
+   "host": "gor.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "got.wikipedia.org",
+   "host": "got.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gpe.wikipedia.org",
+   "host": "gpe.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "guc.wikipedia.org",
+   "host": "guc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gur.wikipedia.org",
+   "host": "gur.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gu.wikipedia.org",
+   "host": "gu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gu.wikiquote.org",
+   "host": "gu.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gu.wikisource.org",
+   "host": "gu.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gu.wiktionary.org",
+   "host": "gu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "guw.wikipedia.org",
+   "host": "guw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "guw.wikiquote.org",
+   "host": "guw.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "guw.wiktionary.org",
+   "host": "guw.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gv.wikipedia.org",
+   "host": "gv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "gv.wiktionary.org",
+   "host": "gv.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hak.wikipedia.org",
+   "host": "hak.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ha.wikipedia.org",
+   "host": "ha.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ha.wiktionary.org",
+   "host": "ha.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "haw.wikipedia.org",
+   "host": "haw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wikipedia.org",
+   "host": "he.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wikibooks.org",
+   "host": "he.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wikiquote.org",
+   "host": "he.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wikisource.org",
+   "host": "he.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wikivoyage.org",
+   "host": "he.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "he.wiktionary.org",
+   "host": "he.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hif.wikipedia.org",
+   "host": "hif.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hif.wiktionary.org",
+   "host": "hif.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikipedia.org",
+   "host": "hi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikibooks.org",
+   "host": "hi.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikiquote.org",
+   "host": "hi.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikisource.org",
+   "host": "hi.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikiversity.org",
+   "host": "hi.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wikivoyage.org",
+   "host": "hi.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hi.wiktionary.org",
+   "host": "hi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hr.wikipedia.org",
+   "host": "hr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hr.wikibooks.org",
+   "host": "hr.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hr.wikiquote.org",
+   "host": "hr.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hr.wikisource.org",
+   "host": "hr.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hr.wiktionary.org",
+   "host": "hr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hsb.wikipedia.org",
+   "host": "hsb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hsb.wiktionary.org",
+   "host": "hsb.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ht.wikipedia.org",
+   "host": "ht.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hu.wikipedia.org",
+   "host": "hu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hu.wikibooks.org",
+   "host": "hu.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hu.wikiquote.org",
+   "host": "hu.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hu.wikisource.org",
+   "host": "hu.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hu.wiktionary.org",
+   "host": "hu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hy.wikipedia.org",
+   "host": "hy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hy.wikibooks.org",
+   "host": "hy.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hy.wikiquote.org",
+   "host": "hy.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hy.wikisource.org",
+   "host": "hy.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hy.wiktionary.org",
+   "host": "hy.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "hyw.wikipedia.org",
+   "host": "hyw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ia.wikipedia.org",
+   "host": "ia.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ia.wikibooks.org",
+   "host": "ia.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ia.wiktionary.org",
+   "host": "ia.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "iba.wikipedia.org",
+   "host": "iba.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wikipedia.org",
+   "host": "id.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wikibooks.org",
+   "host": "id.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wikiquote.org",
+   "host": "id.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wikisource.org",
+   "host": "id.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wikivoyage.org",
+   "host": "id.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "id.wiktionary.org",
+   "host": "id.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ie.wikipedia.org",
+   "host": "ie.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ie.wiktionary.org",
+   "host": "ie.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "igl.wikipedia.org",
+   "host": "igl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ig.wikipedia.org",
+   "host": "ig.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ig.wikiquote.org",
+   "host": "ig.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ig.wiktionary.org",
+   "host": "ig.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ik.wikipedia.org",
+   "host": "ik.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ilo.wikipedia.org",
+   "host": "ilo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "inh.wikipedia.org",
+   "host": "inh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "io.wikipedia.org",
+   "host": "io.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "io.wiktionary.org",
+   "host": "io.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "isv.wikipedia.org",
+   "host": "isv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "is.wikipedia.org",
+   "host": "is.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "is.wikibooks.org",
+   "host": "is.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "is.wikiquote.org",
+   "host": "is.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "is.wikisource.org",
+   "host": "is.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "is.wiktionary.org",
+   "host": "is.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikipedia.org",
+   "host": "it.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikibooks.org",
+   "host": "it.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikiquote.org",
+   "host": "it.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikisource.org",
+   "host": "it.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikiversity.org",
+   "host": "it.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wikivoyage.org",
+   "host": "it.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "it.wiktionary.org",
+   "host": "it.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "iu.wikipedia.org",
+   "host": "iu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "iu.wiktionary.org",
+   "host": "iu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jam.wikipedia.org",
+   "host": "jam.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikipedia.org",
+   "host": "ja.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikibooks.org",
+   "host": "ja.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikiquote.org",
+   "host": "ja.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikisource.org",
+   "host": "ja.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikiversity.org",
+   "host": "ja.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wikivoyage.org",
+   "host": "ja.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ja.wiktionary.org",
+   "host": "ja.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jbo.wikipedia.org",
+   "host": "jbo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jbo.wiktionary.org",
+   "host": "jbo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jv.wikipedia.org",
+   "host": "jv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jv.wikisource.org",
+   "host": "jv.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "jv.wiktionary.org",
+   "host": "jv.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kaa.wikipedia.org",
+   "host": "kaa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kaa.wiktionary.org",
+   "host": "kaa.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kab.wikipedia.org",
+   "host": "kab.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kai.wikipedia.org",
+   "host": "kai.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kaj.wikipedia.org",
+   "host": "kaj.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ka.wikipedia.org",
+   "host": "ka.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ka.wikibooks.org",
+   "host": "ka.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ka.wikiquote.org",
+   "host": "ka.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ka.wikisource.org",
+   "host": "ka.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ka.wiktionary.org",
+   "host": "ka.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kbd.wikipedia.org",
+   "host": "kbd.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kbd.wiktionary.org",
+   "host": "kbd.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kbp.wikipedia.org",
+   "host": "kbp.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kcg.wikipedia.org",
+   "host": "kcg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kcg.wiktionary.org",
+   "host": "kcg.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kge.wikipedia.org",
+   "host": "kge.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kg.wikipedia.org",
+   "host": "kg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ki.wikipedia.org",
+   "host": "ki.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kk.wikipedia.org",
+   "host": "kk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kk.wikibooks.org",
+   "host": "kk.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kk.wiktionary.org",
+   "host": "kk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kl.wiktionary.org",
+   "host": "kl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "km.wikipedia.org",
+   "host": "km.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "km.wikibooks.org",
+   "host": "km.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "km.wiktionary.org",
+   "host": "km.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "knc.wikipedia.org",
+   "host": "knc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kn.wikipedia.org",
+   "host": "kn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kn.wikiquote.org",
+   "host": "kn.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kn.wikisource.org",
+   "host": "kn.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kn.wiktionary.org",
+   "host": "kn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "koi.wikipedia.org",
+   "host": "koi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wikipedia.org",
+   "host": "ko.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wikibooks.org",
+   "host": "ko.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wikiquote.org",
+   "host": "ko.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wikisource.org",
+   "host": "ko.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wikiversity.org",
+   "host": "ko.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ko.wiktionary.org",
+   "host": "ko.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "krc.wikipedia.org",
+   "host": "krc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ksh.wikipedia.org",
+   "host": "ksh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ks.wikipedia.org",
+   "host": "ks.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ks.wiktionary.org",
+   "host": "ks.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kus.wikipedia.org",
+   "host": "kus.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ku.wikipedia.org",
+   "host": "ku.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ku.wikibooks.org",
+   "host": "ku.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ku.wikiquote.org",
+   "host": "ku.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ku.wiktionary.org",
+   "host": "ku.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kv.wikipedia.org",
+   "host": "kv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kw.wikipedia.org",
+   "host": "kw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "kw.wiktionary.org",
+   "host": "kw.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ky.wikipedia.org",
+   "host": "ky.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ky.wikiquote.org",
+   "host": "ky.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ky.wiktionary.org",
+   "host": "ky.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lad.wikipedia.org",
+   "host": "lad.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "la.wikipedia.org",
+   "host": "la.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "la.wikibooks.org",
+   "host": "la.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "la.wikiquote.org",
+   "host": "la.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "la.wikisource.org",
+   "host": "la.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "la.wiktionary.org",
+   "host": "la.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lbe.wikipedia.org",
+   "host": "lbe.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lb.wikipedia.org",
+   "host": "lb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lb.wiktionary.org",
+   "host": "lb.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lez.wikipedia.org",
+   "host": "lez.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lfn.wikipedia.org",
+   "host": "lfn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lg.wikipedia.org",
+   "host": "lg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lij.wikipedia.org",
+   "host": "lij.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lij.wikisource.org",
+   "host": "lij.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "li.wikipedia.org",
+   "host": "li.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "li.wikibooks.org",
+   "host": "li.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "li.wikiquote.org",
+   "host": "li.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "li.wikisource.org",
+   "host": "li.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "li.wiktionary.org",
+   "host": "li.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lld.wikipedia.org",
+   "host": "lld.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lmo.wikipedia.org",
+   "host": "lmo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lmo.wiktionary.org",
+   "host": "lmo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ln.wikipedia.org",
+   "host": "ln.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ln.wiktionary.org",
+   "host": "ln.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lo.wikipedia.org",
+   "host": "lo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lo.wiktionary.org",
+   "host": "lo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ltg.wikipedia.org",
+   "host": "ltg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lt.wikipedia.org",
+   "host": "lt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lt.wikibooks.org",
+   "host": "lt.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lt.wikiquote.org",
+   "host": "lt.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lt.wikisource.org",
+   "host": "lt.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lt.wiktionary.org",
+   "host": "lt.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lv.wikipedia.org",
+   "host": "lv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "lv.wiktionary.org",
+   "host": "lv.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mad.wikipedia.org",
+   "host": "mad.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mad.wikisource.org",
+   "host": "mad.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mad.wiktionary.org",
+   "host": "mad.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mag.wikipedia.org",
+   "host": "mag.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mai.wikipedia.org",
+   "host": "mai.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "map-bms.wikipedia.org",
+   "host": "map-bms.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mdf.wikipedia.org",
+   "host": "mdf.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mg.wikipedia.org",
+   "host": "mg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mg.wikibooks.org",
+   "host": "mg.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mg.wiktionary.org",
+   "host": "mg.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mhr.wikipedia.org",
+   "host": "mhr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "min.wikipedia.org",
+   "host": "min.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "min.wikibooks.org",
+   "host": "min.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "min.wikiquote.org",
+   "host": "min.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "min.wikisource.org",
+   "host": "min.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "min.wiktionary.org",
+   "host": "min.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mi.wikipedia.org",
+   "host": "mi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mi.wiktionary.org",
+   "host": "mi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mk.wikipedia.org",
+   "host": "mk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mk.wikibooks.org",
+   "host": "mk.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mk.wikisource.org",
+   "host": "mk.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mk.wiktionary.org",
+   "host": "mk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wikipedia.org",
+   "host": "ml.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wikibooks.org",
+   "host": "ml.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wikiquote.org",
+   "host": "ml.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wikisource.org",
+   "host": "ml.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wikivoyage.org",
+   "host": "ml.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ml.wiktionary.org",
+   "host": "ml.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mni.wikipedia.org",
+   "host": "mni.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mni.wiktionary.org",
+   "host": "mni.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mn.wikipedia.org",
+   "host": "mn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mn.wiktionary.org",
+   "host": "mn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mnw.wikipedia.org",
+   "host": "mnw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mnw.wiktionary.org",
+   "host": "mnw.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mos.wikipedia.org",
+   "host": "mos.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mrj.wikipedia.org",
+   "host": "mrj.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mr.wikipedia.org",
+   "host": "mr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mr.wikibooks.org",
+   "host": "mr.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mr.wikiquote.org",
+   "host": "mr.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mr.wikisource.org",
+   "host": "mr.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mr.wiktionary.org",
+   "host": "mr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ms.wikipedia.org",
+   "host": "ms.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ms.wikibooks.org",
+   "host": "ms.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ms.wikiquote.org",
+   "host": "ms.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ms.wikisource.org",
+   "host": "ms.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ms.wiktionary.org",
+   "host": "ms.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mt.wikipedia.org",
+   "host": "mt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mt.wiktionary.org",
+   "host": "mt.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mwl.wikipedia.org",
+   "host": "mwl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "myv.wikipedia.org",
+   "host": "myv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "my.wikipedia.org",
+   "host": "my.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "my.wikisource.org",
+   "host": "my.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "my.wiktionary.org",
+   "host": "my.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "mzn.wikipedia.org",
+   "host": "mzn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nah.wikipedia.org",
+   "host": "nah.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nah.wiktionary.org",
+   "host": "nah.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nap.wikipedia.org",
+   "host": "nap.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nap.wikisource.org",
+   "host": "nap.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "na.wiktionary.org",
+   "host": "na.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nds-nl.wikipedia.org",
+   "host": "nds-nl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nds.wikipedia.org",
+   "host": "nds.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nds.wiktionary.org",
+   "host": "nds.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ne.wikipedia.org",
+   "host": "ne.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ne.wikibooks.org",
+   "host": "ne.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ne.wiktionary.org",
+   "host": "ne.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "new.wikipedia.org",
+   "host": "new.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nia.wikipedia.org",
+   "host": "nia.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nia.wiktionary.org",
+   "host": "nia.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wikipedia.org",
+   "host": "nl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wikibooks.org",
+   "host": "nl.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wikiquote.org",
+   "host": "nl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wikisource.org",
+   "host": "nl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wikivoyage.org",
+   "host": "nl.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nl.wiktionary.org",
+   "host": "nl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nn.wikipedia.org",
+   "host": "nn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nn.wikiquote.org",
+   "host": "nn.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nn.wiktionary.org",
+   "host": "nn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nov.wikipedia.org",
+   "host": "nov.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "no.wikipedia.org",
+   "host": "no.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "no.wikibooks.org",
+   "host": "no.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "no.wikiquote.org",
+   "host": "no.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "no.wikisource.org",
+   "host": "no.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "no.wiktionary.org",
+   "host": "no.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nqo.wikipedia.org",
+   "host": "nqo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nrm.wikipedia.org",
+   "host": "nrm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nr.wikipedia.org",
+   "host": "nr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nso.wikipedia.org",
+   "host": "nso.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nup.wikipedia.org",
+   "host": "nup.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "nv.wikipedia.org",
+   "host": "nv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ny.wikipedia.org",
+   "host": "ny.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "oc.wikipedia.org",
+   "host": "oc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "oc.wikibooks.org",
+   "host": "oc.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "oc.wiktionary.org",
+   "host": "oc.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "olo.wikipedia.org",
+   "host": "olo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "om.wikipedia.org",
+   "host": "om.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "om.wiktionary.org",
+   "host": "om.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "or.wikipedia.org",
+   "host": "or.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "or.wikisource.org",
+   "host": "or.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "or.wiktionary.org",
+   "host": "or.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "os.wikipedia.org",
+   "host": "os.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pag.wikipedia.org",
+   "host": "pag.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pam.wikipedia.org",
+   "host": "pam.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pap.wikipedia.org",
+   "host": "pap.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pa.wikipedia.org",
+   "host": "pa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pa.wikibooks.org",
+   "host": "pa.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pa.wikisource.org",
+   "host": "pa.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pa.wiktionary.org",
+   "host": "pa.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pcd.wikipedia.org",
+   "host": "pcd.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pcm.wikipedia.org",
+   "host": "pcm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pcm.wikiquote.org",
+   "host": "pcm.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pdc.wikipedia.org",
+   "host": "pdc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pfl.wikipedia.org",
+   "host": "pfl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pi.wikipedia.org",
+   "host": "pi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wikipedia.org",
+   "host": "pl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wikibooks.org",
+   "host": "pl.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wikiquote.org",
+   "host": "pl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wikisource.org",
+   "host": "pl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wikivoyage.org",
+   "host": "pl.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pl.wiktionary.org",
+   "host": "pl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pms.wikipedia.org",
+   "host": "pms.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pms.wikisource.org",
+   "host": "pms.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pnb.wikipedia.org",
+   "host": "pnb.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pnb.wiktionary.org",
+   "host": "pnb.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pnt.wikipedia.org",
+   "host": "pnt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ppl.wikipedia.org",
+   "host": "ppl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ps.wikipedia.org",
+   "host": "ps.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ps.wikivoyage.org",
+   "host": "ps.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ps.wiktionary.org",
+   "host": "ps.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikipedia.org",
+   "host": "pt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikibooks.org",
+   "host": "pt.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikiquote.org",
+   "host": "pt.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikisource.org",
+   "host": "pt.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikiversity.org",
+   "host": "pt.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wikivoyage.org",
+   "host": "pt.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pt.wiktionary.org",
+   "host": "pt.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "pwn.wikipedia.org",
+   "host": "pwn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "qu.wikipedia.org",
+   "host": "qu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "qu.wiktionary.org",
+   "host": "qu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rki.wikipedia.org",
+   "host": "rki.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rm.wikipedia.org",
+   "host": "rm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rmy.wikipedia.org",
+   "host": "rmy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rn.wikipedia.org",
+   "host": "rn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "roa-rup.wikipedia.org",
+   "host": "roa-rup.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "roa-rup.wiktionary.org",
+   "host": "roa-rup.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "roa-tara.wikipedia.org",
+   "host": "roa-tara.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wikipedia.org",
+   "host": "ro.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wikibooks.org",
+   "host": "ro.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wikiquote.org",
+   "host": "ro.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wikisource.org",
+   "host": "ro.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wikivoyage.org",
+   "host": "ro.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ro.wiktionary.org",
+   "host": "ro.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rsk.wikipedia.org",
+   "host": "rsk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rue.wikipedia.org",
+   "host": "rue.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikipedia.org",
+   "host": "ru.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikibooks.org",
+   "host": "ru.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikiquote.org",
+   "host": "ru.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikisource.org",
+   "host": "ru.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikiversity.org",
+   "host": "ru.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wikivoyage.org",
+   "host": "ru.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ru.wiktionary.org",
+   "host": "ru.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rw.wikipedia.org",
+   "host": "rw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "rw.wiktionary.org",
+   "host": "rw.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sah.wikipedia.org",
+   "host": "sah.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sah.wikiquote.org",
+   "host": "sah.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sah.wikisource.org",
+   "host": "sah.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sat.wikipedia.org",
+   "host": "sat.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sat.wiktionary.org",
+   "host": "sat.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sa.wikipedia.org",
+   "host": "sa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sa.wikibooks.org",
+   "host": "sa.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sa.wikiquote.org",
+   "host": "sa.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sa.wikisource.org",
+   "host": "sa.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sa.wiktionary.org",
+   "host": "sa.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "scn.wikipedia.org",
+   "host": "scn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "scn.wiktionary.org",
+   "host": "scn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sco.wikipedia.org",
+   "host": "sco.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sc.wikipedia.org",
+   "host": "sc.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sd.wikipedia.org",
+   "host": "sd.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sd.wiktionary.org",
+   "host": "sd.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "se.wikipedia.org",
+   "host": "se.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sg.wikipedia.org",
+   "host": "sg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sg.wiktionary.org",
+   "host": "sg.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shi.wikipedia.org",
+   "host": "shi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shn.wikipedia.org",
+   "host": "shn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shn.wikibooks.org",
+   "host": "shn.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shn.wikivoyage.org",
+   "host": "shn.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shn.wiktionary.org",
+   "host": "shn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sh.wikipedia.org",
+   "host": "sh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sh.wiktionary.org",
+   "host": "sh.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "shy.wiktionary.org",
+   "host": "shy.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "simple.wikipedia.org",
+   "host": "simple.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "simple.wiktionary.org",
+   "host": "simple.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "si.wikipedia.org",
+   "host": "si.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "si.wikibooks.org",
+   "host": "si.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "si.wiktionary.org",
+   "host": "si.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "skr.wikipedia.org",
+   "host": "skr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "skr.wiktionary.org",
+   "host": "skr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sk.wikipedia.org",
+   "host": "sk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sk.wikibooks.org",
+   "host": "sk.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sk.wikiquote.org",
+   "host": "sk.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sk.wikisource.org",
+   "host": "sk.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sk.wiktionary.org",
+   "host": "sk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wikipedia.org",
+   "host": "sl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wikibooks.org",
+   "host": "sl.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wikiquote.org",
+   "host": "sl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wikisource.org",
+   "host": "sl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wikiversity.org",
+   "host": "sl.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sl.wiktionary.org",
+   "host": "sl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "smn.wikipedia.org",
+   "host": "smn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sm.wikipedia.org",
+   "host": "sm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sm.wiktionary.org",
+   "host": "sm.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sn.wikipedia.org",
+   "host": "sn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "so.wikipedia.org",
+   "host": "so.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "so.wiktionary.org",
+   "host": "so.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sq.wikipedia.org",
+   "host": "sq.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sq.wikibooks.org",
+   "host": "sq.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sq.wikiquote.org",
+   "host": "sq.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sq.wiktionary.org",
+   "host": "sq.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "srn.wikipedia.org",
+   "host": "srn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sr.wikipedia.org",
+   "host": "sr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sr.wikibooks.org",
+   "host": "sr.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sr.wikiquote.org",
+   "host": "sr.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sr.wikisource.org",
+   "host": "sr.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sr.wiktionary.org",
+   "host": "sr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ss.wikipedia.org",
+   "host": "ss.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ss.wiktionary.org",
+   "host": "ss.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "stq.wikipedia.org",
+   "host": "stq.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "st.wikipedia.org",
+   "host": "st.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "st.wiktionary.org",
+   "host": "st.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "su.wikipedia.org",
+   "host": "su.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "su.wikiquote.org",
+   "host": "su.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "su.wikisource.org",
+   "host": "su.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "su.wiktionary.org",
+   "host": "su.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikipedia.org",
+   "host": "sv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikibooks.org",
+   "host": "sv.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikiquote.org",
+   "host": "sv.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikisource.org",
+   "host": "sv.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikiversity.org",
+   "host": "sv.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wikivoyage.org",
+   "host": "sv.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sv.wiktionary.org",
+   "host": "sv.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sw.wikipedia.org",
+   "host": "sw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "sw.wiktionary.org",
+   "host": "sw.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "syl.wikipedia.org",
+   "host": "syl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "szl.wikipedia.org",
+   "host": "szl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "szy.wikipedia.org",
+   "host": "szy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ta.wikipedia.org",
+   "host": "ta.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ta.wikibooks.org",
+   "host": "ta.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ta.wikiquote.org",
+   "host": "ta.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ta.wikisource.org",
+   "host": "ta.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ta.wiktionary.org",
+   "host": "ta.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tay.wikipedia.org",
+   "host": "tay.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tcy.wikipedia.org",
+   "host": "tcy.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tcy.wikisource.org",
+   "host": "tcy.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tcy.wiktionary.org",
+   "host": "tcy.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tdd.wikipedia.org",
+   "host": "tdd.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tet.wikipedia.org",
+   "host": "tet.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "te.wikipedia.org",
+   "host": "te.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "te.wikibooks.org",
+   "host": "te.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "te.wikiquote.org",
+   "host": "te.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "te.wikisource.org",
+   "host": "te.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "te.wiktionary.org",
+   "host": "te.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tg.wikipedia.org",
+   "host": "tg.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tg.wikibooks.org",
+   "host": "tg.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tg.wiktionary.org",
+   "host": "tg.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "th.wikipedia.org",
+   "host": "th.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "th.wikibooks.org",
+   "host": "th.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "th.wikiquote.org",
+   "host": "th.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "th.wikisource.org",
+   "host": "th.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "th.wiktionary.org",
+   "host": "th.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tig.wikipedia.org",
+   "host": "tig.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ti.wikipedia.org",
+   "host": "ti.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ti.wiktionary.org",
+   "host": "ti.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tk.wikipedia.org",
+   "host": "tk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tk.wiktionary.org",
+   "host": "tk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tl.wikipedia.org",
+   "host": "tl.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tl.wikibooks.org",
+   "host": "tl.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tl.wikiquote.org",
+   "host": "tl.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tl.wikisource.org",
+   "host": "tl.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tl.wiktionary.org",
+   "host": "tl.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tly.wikipedia.org",
+   "host": "tly.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tn.wikipedia.org",
+   "host": "tn.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tn.wiktionary.org",
+   "host": "tn.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tok.wikipedia.org",
+   "host": "tok.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "to.wikipedia.org",
+   "host": "to.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tpi.wikipedia.org",
+   "host": "tpi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tpi.wiktionary.org",
+   "host": "tpi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "trv.wikipedia.org",
+   "host": "trv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wikipedia.org",
+   "host": "tr.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wikibooks.org",
+   "host": "tr.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wikiquote.org",
+   "host": "tr.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wikisource.org",
+   "host": "tr.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wikivoyage.org",
+   "host": "tr.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tr.wiktionary.org",
+   "host": "tr.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ts.wikipedia.org",
+   "host": "ts.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ts.wiktionary.org",
+   "host": "ts.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tt.wikipedia.org",
+   "host": "tt.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tt.wikibooks.org",
+   "host": "tt.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tt.wiktionary.org",
+   "host": "tt.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tum.wikipedia.org",
+   "host": "tum.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tw.wikipedia.org",
+   "host": "tw.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "tyv.wikipedia.org",
+   "host": "tyv.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ty.wikipedia.org",
+   "host": "ty.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "udm.wikipedia.org",
+   "host": "udm.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ug.wikipedia.org",
+   "host": "ug.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ug.wiktionary.org",
+   "host": "ug.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wikipedia.org",
+   "host": "uk.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wikibooks.org",
+   "host": "uk.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wikiquote.org",
+   "host": "uk.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wikisource.org",
+   "host": "uk.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wikivoyage.org",
+   "host": "uk.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uk.wiktionary.org",
+   "host": "uk.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ur.wikipedia.org",
+   "host": "ur.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ur.wikibooks.org",
+   "host": "ur.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ur.wikiquote.org",
+   "host": "ur.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ur.wikisource.org",
+   "host": "ur.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ur.wiktionary.org",
+   "host": "ur.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uz.wikipedia.org",
+   "host": "uz.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uz.wikiquote.org",
+   "host": "uz.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "uz.wiktionary.org",
+   "host": "uz.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vec.wikipedia.org",
+   "host": "vec.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vec.wikisource.org",
+   "host": "vec.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vec.wiktionary.org",
+   "host": "vec.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vep.wikipedia.org",
+   "host": "vep.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "ve.wikipedia.org",
+   "host": "ve.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wikipedia.org",
+   "host": "vi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wikibooks.org",
+   "host": "vi.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wikiquote.org",
+   "host": "vi.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wikisource.org",
+   "host": "vi.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wikivoyage.org",
+   "host": "vi.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vi.wiktionary.org",
+   "host": "vi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vls.wikipedia.org",
+   "host": "vls.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vo.wikipedia.org",
+   "host": "vo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "vo.wiktionary.org",
+   "host": "vo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "war.wikipedia.org",
+   "host": "war.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wa.wikipedia.org",
+   "host": "wa.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wa.wikisource.org",
+   "host": "wa.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wa.wiktionary.org",
+   "host": "wa.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wo.wikipedia.org",
+   "host": "wo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wo.wiktionary.org",
+   "host": "wo.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "wuu.wikipedia.org",
+   "host": "wuu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "xal.wikipedia.org",
+   "host": "xal.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "xh.wikipedia.org",
+   "host": "xh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "xmf.wikipedia.org",
+   "host": "xmf.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "yi.wikipedia.org",
+   "host": "yi.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "yi.wikisource.org",
+   "host": "yi.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "yi.wiktionary.org",
+   "host": "yi.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "yo.wikipedia.org",
+   "host": "yo.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "yue.wiktionary.org",
+   "host": "yue.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "za.wikipedia.org",
+   "host": "za.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zea.wikipedia.org",
+   "host": "zea.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zgh.wikipedia.org",
+   "host": "zgh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zgh.wiktionary.org",
+   "host": "zgh.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh-classical.wikipedia.org",
+   "host": "zh-classical.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh-min-nan.wikipedia.org",
+   "host": "zh-min-nan.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh-min-nan.wikisource.org",
+   "host": "zh-min-nan.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh-min-nan.wiktionary.org",
+   "host": "zh-min-nan.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh-yue.wikipedia.org",
+   "host": "zh-yue.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikipedia.org",
+   "host": "zh.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikibooks.org",
+   "host": "zh.wikibooks.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikiquote.org",
+   "host": "zh.wikiquote.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikisource.org",
+   "host": "zh.wikisource.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikiversity.org",
+   "host": "zh.wikiversity.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wikivoyage.org",
+   "host": "zh.wikivoyage.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zh.wiktionary.org",
+   "host": "zh.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zu.wikipedia.org",
+   "host": "zu.wikipedia.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "zu.wiktionary.org",
+   "host": "zu.wiktionary.org",
+   "kind": "wiki",
+   "origin": "Wikimedia operations-mediawiki-config"
+  },
+  {
+   "name": "247sports",
+   "host": "247sports.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "35photo",
+   "host": "35photo.pro",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "3dtoday",
+   "host": "3dtoday.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "7cup",
+   "host": "www.7cups.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "7dach",
+   "host": "7dach.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "about.me",
+   "host": "about.me",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "ACF",
+   "host": "support.advancedcustomfields.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "AdmireMe.VIP",
+   "host": "admireme.vip",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "adultism",
+   "host": "www.adultism.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "ADVFN",
+   "host": "uk.advfn.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "alik",
+   "host": "www.alik.cz",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Alura",
+   "host": "cursos.alura.com.br",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Ameblo",
+   "host": "ameblo.jp",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "AmericanThinker",
+   "host": "www.americanthinker.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "AniList",
+   "host": "graphql.anilist.co",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Anime-Planet",
+   "host": "www.anime-planet.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Aparat",
+   "host": "www.aparat.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Apex Legends",
+   "host": "api.tracker.gg",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "appian Community",
+   "host": "community.appian.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Arch Linux GitLab",
+   "host": "gitlab.archlinux.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Arduino (Forum)",
+   "host": "forum.arduino.cc",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Arduino (Project Hub)",
+   "host": "projecthub.arduino.cc",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "ArmorGames",
+   "host": "armorgames.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Arsmate",
+   "host": "arsmate.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Artbreeder",
+   "host": "www.artbreeder.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "ArtStation",
+   "host": "www.artstation.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "asciinema",
+   "host": "asciinema.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "AtCoder",
+   "host": "atcoder.jp",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "au.ru",
+   "host": "au.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Audiojungle",
+   "host": "audiojungle.net",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Avid Community",
+   "host": "community.avid.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "babepedia",
+   "host": "www.babepedia.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BabyPips",
+   "host": "forums.babypips.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bandcamp",
+   "host": "bandcamp.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bandlab",
+   "host": "www.bandlab.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "bblog_ru",
+   "host": "www.babyblog.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BDSMLR",
+   "host": "api-prod.bdsmlr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "bdsmsingles",
+   "host": "www.bdsmsingles.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Beacons",
+   "host": "beacons.ai",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Behance",
+   "host": "www.behance.net",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bentbox",
+   "host": "bentbox.co",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BiggerPockets",
+   "host": "www.biggerpockets.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BIGO Live",
+   "host": "www.bigo.tv",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bimpos",
+   "host": "ask.bimpos.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bio Site",
+   "host": "bio.site",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "biolink",
+   "host": "bio.link",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bitbucket",
+   "host": "bitbucket.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bitchute",
+   "host": "api.bitchute.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "blogi.pl",
+   "host": "www.blogi.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Blogspot",
+   "host": "blogspot.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bluesky Domain as User",
+   "host": "bsky.app",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bluesky Username",
+   "host": "public.api.bsky.app",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BoardGameGeek",
+   "host": "api.geekdo.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bookcrossing",
+   "host": "www.bookcrossing.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Booknode",
+   "host": "booknode.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Boosty",
+   "host": "api.boosty.to",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Booth",
+   "host": "booth.pm",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Brickset",
+   "host": "brickset.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bugcrowd",
+   "host": "bugcrowd.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Bunpro",
+   "host": "community.bunpro.jp",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Buy Me a Coffee",
+   "host": "app.buymeacoffee.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "BuzzFeed",
+   "host": "www.buzzfeed.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "cafecito",
+   "host": "cafecito.app",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Calendy",
+   "host": "calendly.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cameo",
+   "host": "www.cameo.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Carbonmade",
+   "host": "carbonmade.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Career.habr",
+   "host": "career.habr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "carrd.co",
+   "host": "carrd.co",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "CastingCallClub",
+   "host": "www.castingcall.club",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "cda.pl",
+   "host": "www.cda.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cent",
+   "host": "beta.cent.co",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "cfx.re",
+   "host": "forum.cfx.re",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "championat",
+   "host": "www.championat.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Chamsko",
+   "host": "www.chamsko.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "chatango.com",
+   "host": "chatango.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "CHEEZburger",
+   "host": "cheezburger.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Chess.com",
+   "host": "api.chess.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Chocolatey",
+   "host": "community.chocolatey.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Choko.Link",
+   "host": "choko.link",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Chomikuj.pl",
+   "host": "chomikuj.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Chyoa",
+   "host": "chyoa.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cloudflare",
+   "host": "community.cloudflare.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Clubhouse",
+   "host": "www.clubhouse.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "cnet",
+   "host": "www.cnet.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Coda",
+   "host": "coda.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Codeberg",
+   "host": "codeberg.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Codecademy",
+   "host": "www.codecademy.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "CodeChef",
+   "host": "www.codechef.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Codeforces",
+   "host": "codeforces.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "codementor",
+   "host": "www.codementor.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "CodePen",
+   "host": "codepen.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Coderwall",
+   "host": "coderwall.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "CodeSandbox",
+   "host": "codesandbox.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Codewars",
+   "host": "www.codewars.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "COLOURlovers",
+   "host": "www.colourlovers.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Commudle",
+   "host": "json.commudle.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Community Adobe",
+   "host": "community.adobe.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "coroflot",
+   "host": "www.coroflot.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Coub",
+   "host": "coub.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "cowboys4angels",
+   "host": "cowboys4angels.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cracked",
+   "host": "www.cracked.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "crevado",
+   "host": "crevado.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cropty",
+   "host": "api.cropty.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Crowdin",
+   "host": "crowdin.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cults3D",
+   "host": "cults3d.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Cytoid",
+   "host": "cytoid.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Daily Kos",
+   "host": "www.dailykos.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Dailymotion",
+   "host": "api.dailymotion.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "darudar",
+   "host": "darudar.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "dateinasia",
+   "host": "www.dateinasia.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "datezone",
+   "host": "en.datezone.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Dating.ru",
+   "host": "dating.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Demotywatory",
+   "host": "demotywatory.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "depop",
+   "host": "www.depop.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Designspriation",
+   "host": "www.designspiration.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "destream",
+   "host": "api.destream.net",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "dev.to",
+   "host": "dev.to",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DeviantArt",
+   "host": "www.deviantart.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "devRant",
+   "host": "devrant.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DFG",
+   "host": "www.dfg.com.br",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Diablo",
+   "host": "diablo2.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DIBIZ",
+   "host": "www.dibiz.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Digitalspy",
+   "host": "forums.digitalspy.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "diigo",
+   "host": "www.diigo.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Discogs",
+   "host": "api.discogs.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Discord (Invite)",
+   "host": "discord.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Discourse",
+   "host": "meta.discourse.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "discuss.elastic.co",
+   "host": "discuss.elastic.co",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Disqus",
+   "host": "disqus.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Docker Hub (Organization)",
+   "host": "hub.docker.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Dojoverse",
+   "host": "dojoverse.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "donate.stream",
+   "host": "donate.stream",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Donatello",
+   "host": "donatello.to",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Donatik",
+   "host": "donatik.ua",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Donation Alerts",
+   "host": "www.donationalerts.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DonationPay",
+   "host": "give.donationpay.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Donatty",
+   "host": "api.donatty.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "dot.cards",
+   "host": "dot.cards",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Dota2.ru",
+   "host": "dota2.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DOTAFire",
+   "host": "www.dotafire.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DOU",
+   "host": "dou.ua",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Dribbble",
+   "host": "dribbble.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "DRIVE2.RU",
+   "host": "www.drive2.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Droners",
+   "host": "droners.io",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Duolingo",
+   "host": "www.duolingo.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "easyen",
+   "host": "easyen.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "eBay",
+   "host": "www.ebay.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Electrobel",
+   "host": "be.electrobel.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "EPORNER",
+   "host": "www.eporner.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Etoro",
+   "host": "www.etoro.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Etsy",
+   "host": "www.etsy.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Evolution CMS",
+   "host": "community.evocms.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Expressional.social (Mastodon Instance)",
+   "host": "expressional.social",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fabswingers",
+   "host": "www.fabswingers.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Facebook",
+   "host": "www.facebook.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "FACEIT",
+   "host": "www.faceit.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Faktopedia",
+   "host": "faktopedia.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "FanCentro",
+   "host": "fancentro.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fandom",
+   "host": "www.fandom.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fanslist (OnlyFans)",
+   "host": "fanslist.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fansly",
+   "host": "apiv3.fansly.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Federated.press (Mastodon Instance)",
+   "host": "federated.press",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Figma",
+   "host": "www.figma.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Filmot Channel Search",
+   "host": "filmot.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Filmweb",
+   "host": "www.filmweb.pl",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "fine_art_america",
+   "host": "fineartamerica.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fiverr",
+   "host": "www.fiverr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "FL.ru",
+   "host": "www.fl.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Flickr",
+   "host": "www.flickr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Flightradar24",
+   "host": "my.flightradar24.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Flipboard",
+   "host": "flipboard.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "flowcode",
+   "host": "www.flow.page",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fodors Forum",
+   "host": "www.fodors.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Folkd",
+   "host": "www.folkd.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fortnite Tracker",
+   "host": "fortnitetracker.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fosstodon.org (Mastodon Instance)",
+   "host": "fosstodon.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "fotka",
+   "host": "api.fotka.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fotolog Archived Profile",
+   "host": "archive.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Foursquare",
+   "host": "foursquare.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "freeCodeCamp",
+   "host": "api.freecodecamp.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Freelance.RU",
+   "host": "freelance.ru",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Freelance.ua",
+   "host": "freelance.ua",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Freelancehunt (Employer)",
+   "host": "freelancehunt.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Freelancer",
+   "host": "www.freelancer.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "freesound",
+   "host": "freesound.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "FriendFinder",
+   "host": "friendfinder.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "FriendFinder-X",
+   "host": "www.friendfinder-x.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Fur Affinity",
+   "host": "www.furaffinity.net",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Gab",
+   "host": "gab.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Game Jolt",
+   "host": "gamejolt.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Gamer DVR",
+   "host": "gamerdvr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Gamespot",
+   "host": "www.gamespot.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Garmin Connect",
+   "host": "connect.garmin.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "GDBrowser",
+   "host": "gdbrowser.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "GeeksForGeeks",
+   "host": "authapi.geeksforgeeks.org",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Genius (Artist)",
+   "host": "genius.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Geocaching",
+   "host": "www.geocaching.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  },
+  {
+   "name": "Gettr",
+   "host": "gettr.com",
+   "kind": "web",
+   "origin": "WhatsMyName"
+  }
+ ]
+}
